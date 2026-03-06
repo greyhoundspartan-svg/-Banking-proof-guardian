@@ -1,0 +1,4 @@
+project_id = "bsmwktmxrwoxnnddosxx"
+
+[functions.zkp-operations]
+verify_jwt = false

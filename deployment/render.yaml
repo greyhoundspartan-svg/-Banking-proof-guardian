@@ -1,0 +1,15 @@
+
+services:
+  - type: web
+    name: spartan-service
+    env: rust
+    buildCommand: cargo build --release
+    startCommand: ./target/release/spartan-service
+    healthCheckPath: /health
+    envVars:
+      - key: RUST_LOG
+        value: info
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        sync: false
